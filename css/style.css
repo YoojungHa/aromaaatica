@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+@import url(common.css);
+@import url(sub.css);
+
+body {font-family: 'Pretendard-Regular'; background: #ececea;}
+.centerbox1314 {max-width: 1314px; margin: 0 auto;}
+
+
+/* visual */
+
+#visual {width: 100%; height: 100vh;position: relative; position: relative;}
+#visual video {width: 100%; height: 100%; object-fit: cover; filter: brightness(80%);}
+#visual .scrollimg {display: flex; flex-direction: column;align-items: center; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); animation:scroll 1s infinite; transition: 0.5s;}
+@keyframes scroll {
+    0% {bottom: 50px;}
+    50% {bottom: 55px;}
+    100% {bottom: 50px;}
+}
+#visual .scrollimg p {color: #fff; margin-top: 10px;}
+
+
+/* section01 */
+
+#section01 {padding: 172px 0;}
+#section01 .centerbox1314 {position: relative;}
+#section01 .centerbox1314 h2 {color: #61584f; font-weight: 300; font-size: 36px; text-transform: uppercase;margin-bottom: 40px;}
+
+#section01 .centerbox1314 .swiper_btns {}
+#section01 .centerbox1314 .swiper_btns .swiper-button-next {content: url(../images/icon_arrow_right.png) !important;}
+#section01 .centerbox1314 .swiper_btns .swiper-button-prev {content: url(../images/icon_arrow_left.png) !important;}
+
+.swiper_btns .swiper-button-next,
+.swiper_btns .swiper-button-prev {width: 13px; height: 23px; position: absolute;}
+.swiper_btns .swiper-button-next {right: 0;}
+.swiper_btns .swiper-button-prev {left: 95%;}
+
+.swiper {
+    width: 1920px;
+    height: 541px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 541px;
+    height: 541px;
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide:hover figure {filter: brightness(50%);}
+.swiper-slide .textBox {position: absolute; bottom: 52px;text-align: start; left: 50%;transform: translateX(-50%); width: 380px; color: #fff; font-weight: 400; visibility: hidden;}
+.swiper-slide .textBox .name {font-size: 16px; margin-bottom: 10px;}
+.swiper-slide .textBox .price {font-size: 18px;}
+.swiper-slide:hover .textBox {visibility: visible;}
+
+
+/* section02 */
+
+#section02 {position: relative;}
+#section02 figure.banner {width: 100%;}
+#section02 figure.banner img {width: 100%;}
+
+#section02 .textBox {position: absolute;top: 50%; left: 326px; transform: translateY(-50%);}
+#section02 .textBox p {font-size: 30px; font-weight: 300; color: #50554f; margin-bottom: 10px;}
+#section02 .textBox h3 {font-size: 48px; font-weight: 300; color: #50554f; margin-bottom: 10px;}
+#section02 .textBox h2 {font-size: 48px; font-weight: 400; color: #222; margin-bottom: 85px;}
+#section02 .textBox span {display: block; width: 250px; height: 45px; border-radius: 18px; background: #8c7c59; text-align: center; line-height: 45px;}
+#section02 .textBox span a {font-size: 30px; color: #fff; font-weight: 300;}
+#section02 .textBox span a img {margin-top: 15px;}
+
+
+
+
+/* section03  */
+
+#section03 {padding: 172px 0;}
+#section03 .centerbox1314 {}
+#section03 .centerbox1314 h2 {text-transform: uppercase; color: #61584f; font-weight: 300; font-size: 36px; text-transform: uppercase;margin-bottom: 40px;}
+#section03 .centerbox1314 .list {display: flex;flex-wrap: wrap; gap: 15px;}
+#section03 .centerbox1314 .list li {position: relative;overflow: hidden;}
+#section03 .centerbox1314 .list li img.hover {position: absolute; z-index: 2; transition: 0.4s; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#section03 .centerbox1314 .list li:nth-child(odd) img.hover {transform:  translate(-50%,-50%) scale(1.72);}
+#section03 .centerbox1314 .list li:nth-child(odd):hover img.hover {transform:  translate(-50%,-50%) scale(1.2);}
+#section03 .centerbox1314 .list li:nth-child(even) img.hover {transform:  translate(-50%,-50%) scale(1.2);}
+#section03 .centerbox1314 .list li:nth-child(even):hover img.hover {transform:  translate(-50%,-50%) scale(1.72);}
+
+
+/* #section03 .centerbox1314 .list li:nth-child(odd):hover img.hover {transform: scale(1);}
+#section03 .centerbox1314 .list li:nth-child(even) img.hover {opacity: 1;transform: scale(1.2);} */
+
+#section03 .centerbox1314 .list li:nth-child(1) .transBg {width: 428px; height: 427px; background: rgba(0,0,0,0.5); position: absolute;z-index: 1;}
+#section03 .centerbox1314 .list li:nth-child(3) .transBg {width: 428px; height: 427px; background: rgba(0,0,0,0.5); position: absolute;z-index: 1;}
+#section03 .centerbox1314 .list li:nth-child(5) .transBg {width: 428px; height: 427px; background: rgba(0,0,0,0.5); position: absolute;z-index: 1;}
+
+#section03 .centerbox1314 .list li:nth-child(2) .transBg {position: absolute; top: 0;width: 428px; height: 428px; background: rgba(229, 255, 229, 0.65);z-index: 1;}
+#section03 .centerbox1314 .list li:nth-child(4) .transBg {position: absolute; top: 0;width: 428px; height: 428px; background: rgba(255, 255, 234, 0.65);z-index: 1;}
+#section03 .centerbox1314 .list li:nth-child(6) .transBg {position: absolute; top: 0;width: 428px; height: 428px; background: rgba(255, 234, 234, 0.65);z-index: 1;}
+#section03 .centerbox1314 .list li img {position: relative;} 
+
+#section03 .centerbox1314 .list li:nth-child(odd):hover .transBg {width: 428px; height: 427px; background: rgba(0,0,0,0.0); }
+
+#section03 .centerbox1314 .list li:nth-child(odd):hover p {color: #000;}
+
+#section03 .centerbox1314 .list li:nth-child(even):hover .transBg {background: transparent;}
+#section03 .centerbox1314 .list li:nth-child(even):hover p {color: #fff;}
+
+/* 
+#section03 .centerbox1314 .list li:nth-child(even) img.hover {width: 428px;position: absolute; z-index: 2; opacity: 0; transform: scale(1.3);}
+#section03 .centerbox1314 .list li:nth-child(odd) img.hover {width: 428px;position: absolute; z-index: 2; opacity: 0; transform: scale(1.2);} */
+
+/* #section03 .centerbox1314 .list li:nth-child(2) img.hover {opacity: 1;transform: scale(1.2);}
+#section03 .centerbox1314 .list li:nth-child(4) img.hover {opacity: 1;transform: scale(1.2);}
+#section03 .centerbox1314 .list li:nth-child(6) img.hover {opacity: 1;transform: scale(1.2);} */
+
+
+#section03 .centerbox1314 .list li p {font-weight: 400; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 30px;z-index: 3;}
+#section03 .centerbox1314 .list li:nth-child(odd) p {color: #fff; z-index: 2;}
+
+
+/* hover (네모 > 동그라미) */
+/* 
+#section03 .centerbox1314 .list li:nth-child(1):hover img.hover {animation: hover .5s forwards;}
+@keyframes hover {
+    0% {transform: scale(1.3);opacity: 1; transition: ease-in-out 0.5s;}
+    100% {transform: scale(1.2);opacity: 1;}
+}
+#section03 .centerbox1314 .list li:nth-child(1):hover .transBg {background: transparent;}
+#section03 .centerbox1314 .list li:nth-child(1):hover p {color: #000;}
+
+#section03 .centerbox1314 .list li:nth-child(3):hover img.hover {animation: hover .5s forwards;}
+@keyframes hover {
+    0% {transform: scale(1.3);opacity: 1; transition: ease-in-out 0.5s;}
+    100% {transform: scale(1.2);opacity: 1;}
+}
+#section03 .centerbox1314 .list li:nth-child(3):hover .transBg {background: transparent;}
+#section03 .centerbox1314 .list li:nth-child(3):hover p {color: #000;}
+
+#section03 .centerbox1314 .list li:nth-child(5):hover img.hover {animation: hover .5s forwards;}
+@keyframes hover {
+    0% {transform: scale(1.3);opacity: 1; transition: ease-in-out 0.5s;}
+    100% {transform: scale(1.2);opacity: 1;}
+}
+#section03 .centerbox1314 .list li:nth-child(5):hover .transBg {background: transparent;}
+#section03 .centerbox1314 .list li:nth-child(5):hover p {color: #000;} */
+
+/* hover (동그라미 > 네모) */
+/* 
+#section03 .centerbox1314 .list li:nth-child(2):hover img.hover {animation: hover2 .5s forwards;}
+@keyframes hover2 {
+    0% {transform: scale(1.2);opacity: 1; transition: ease-in-out 0.5s;}
+    100% {transform: scale(2);opacity: 1;}
+}
+#section03 .centerbox1314 .list li:nth-child(2):hover .transBg {background: transparent;}
+#section03 .centerbox1314 .list li:nth-child(2):hover p {color: #fff;}
+
+#section03 .centerbox1314 .list li:nth-child(4):hover img.hover {animation: hover2 .5s forwards;}
+@keyframes hover2 {
+    0% {transform: scale(1.2);opacity: 1; transition: ease-in-out 0.5s;}
+    100% {transform: scale(2);opacity: 1;}
+}
+#section03 .centerbox1314 .list li:nth-child(4):hover .transBg {background: transparent;}
+#section03 .centerbox1314 .list li:nth-child(4):hover p {color: #fff;}
+
+#section03 .centerbox1314 .list li:nth-child(6):hover img.hover {animation: hover2 .5s forwards;}
+@keyframes hover2 {
+    0% {transform: scale(1.2);opacity: 1; transition: ease-in-out 0.5s;}
+    100% {transform: scale(2);opacity: 1;}
+} */
+#section03 .centerbox1314 .list li:nth-child(6):hover .transBg {background: transparent;}
+#section03 .centerbox1314 .list li:nth-child(6):hover p {color: #fff;}
+
+
+/* section04 */
+
+#section04 {position: relative; height: 1004px;}
+#section04 h2 {color: #61584f; font-weight: 300; font-size: 36px; text-transform: uppercase;}
+#section04 .sns {display: flex; gap: 15px;position: absolute;right: 303px; top:0; height: 1134px; overflow: hidden;}
+#section04 .sns ul {}
+#section04 .sns ul li {margin-bottom: 15px;}
+
+#section04 .sns .list1 {animation: slideDown 20s infinite linear; align-self: flex-end }
+#section04 .sns .list2 {animation: slideUp 20s infinite linear; align-self: flex-start;}
+
+@keyframes slideDown {
+    from {transform: translateY(0);}
+    to {transform: translateY(50%);}
+  }
+ 
+  @keyframes slideUp {
+    from {transform: translateY(0);}
+    to {transform: translateY(-50%);}
+  } 
+
+/* #section04 .sns ul.list1 {animation: listSlide1 10s linear infinite;}
+@keyframes listSlide1 {
+    from {transform: translateY(0);}
+    to {transform: translateY(50%);}
+}
+@media (hover: hover) and (min-height: 700px){
+    .animated-title .content {-webkit-transform: translateX(calc(100% - 8rem)); transform: translateX(calc(100% - 8rem));}
+    }
+
+#section04 .sns ul.list2 {animation: listSlide2 10s linear infinite;}
+@keyframes listSlide2 {
+    from {transform: translateY(0);}
+    to {transform: translateY(-50%);}
+} */
+
+#section04 .bgText {position: relative;}
+#section04 .bgText h3 {-webkit-text-stroke: 2px #888; font-size: 240px; font-weight: 600; color: transparent;position: absolute;z-index: -1; white-space: nowrap; top: 300px; animation: marquee 60s linear infinite; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+/* @media (hover: hover) and (min-width: 700px){
+.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
+}
+ */
+
+
+
+

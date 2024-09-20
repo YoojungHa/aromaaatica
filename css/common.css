@@ -1,0 +1,52 @@
+/* header */
+
+header {width: 100%;height: 92px; position: fixed; left: 50%; transform: translateX(-50%);z-index: 7777; background: linear-gradient(to bottom, #50554f, transparent);}
+header .centerbox1314 {display: flex;justify-content: space-between;line-height: 92px; align-items: center; width: 1314px; }
+
+header .centerbox1314 h1 {}
+header .centerbox1314 h1 a {}
+header .centerbox1314 h1 a img {margin-top: 34px;}
+
+header .centerbox1314 nav {}
+header .centerbox1314 nav .gnb {display: flex;}
+header .centerbox1314 nav .gnb > li {padding: 0 34px; position: relative;}
+header .centerbox1314 nav .gnb > li > a {font-family: 'Pretendard Variable'; font-weight: 400; color: #fff;}
+
+header .centerbox1314 nav .gnb li .lnb {position: absolute; z-index: 7; padding: 30px 0;}
+header .centerbox1314 nav .gnb li .lnb1 {height: 150px; display: none; }
+header .centerbox1314 nav .gnb li .lnb2 {height: 310px; display: none;}
+header .centerbox1314 nav .gnb li .lnb2-2 {padding: 30px 0; position: absolute; top: 92px;left: 180px;display: none;}
+
+header .centerbox1314 nav .gnb li .lnb3 {height: 200px; display: none;}
+header .centerbox1314 nav .gnb li .lnb4 {height: 150px; display: none;}
+
+header .centerbox1314 nav .gnb li .lnb li {flex-wrap: wrap; width: 300px;height: 50px;line-height: 50px;}
+header .centerbox1314 nav .gnb li .lnb2 li {width: 150px;}
+header .centerbox1314 nav .gnb li .lnb2-2 li {width: 150px;height: 50px;line-height: 50px;}
+
+header .centerbox1314 nav .gnb li .lnb li a {font-family: 'Pretendard Variable'; font-weight: 400;}
+
+header .centerbox1314 nav .lnbBg1 {width: 100%; height: 220px; background: #fff; position: absolute; top: 92px; left: 0; z-index: -1; display: none;}
+header .centerbox1314 nav .lnbBg2 {width: 100%; height: 370px; background: #fff; position: absolute; top: 92px; left: 0; z-index: -1; display: none;}
+header .centerbox1314 nav .lnbBg3 {width: 100%; height: 270px; background: #fff; position: absolute; top: 92px; left: 0; z-index: -1; display: none;}
+
+/* hover */
+header .centerbox1314 nav .gnb li .lnb li:hover a {color: #50554f; font-weight: 600;}
+
+
+header .centerbox1314 .topmenu {}
+header .centerbox1314 .topmenu a {padding: 0 15px;}
+header .centerbox1314 .topmenu a img {margin-top: 34px;}
+
+header .headerBg {background: #50554f; width: 100%; height: 92px; position: fixed;top: 0; z-index: -1;display: none;}
+
+
+
+/* footer */
+footer {margin-top: 172px; background: #c5d2c0;}
+footer .centerbox1314 {}
+footer .centerbox1314 .info {border-bottom: 1px solid #50554f;  padding: 75px 0;}
+footer .centerbox1314 .info p {font-size: 20px;font-weight: 300; color: #50554f;}
+footer .centerbox1314 .info .size {font-size: 33px; margin: 10px 0; display: inline-block;} 
+
+footer .centerbox1314 .copyright {padding: 75px 0; font-size: 14px; color: #50554f; line-height: 23px; font-weight: 300;}

@@ -1,0 +1,243 @@
+/* sub page */
+
+/* sub visual */
+
+#sub_visual {background: url(../images/sub-visual.png) no-repeat center 100%; height: 100%;}
+#sub_visual .centerbox1314 {display: flex;justify-content: space-between; align-items: center; height: 100%;}
+
+#sub_visual .prod-thumb .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+#sub_visual .prod-thumb .swiper-wrapper {width: 408px; height: 544px; margin-top: 10%;}
+
+#sub_visual .prod-thumb .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: 50%; transform: translateY(-50%);
+    box-shadow: 2px 2px 9px rgba(96, 90, 88, 0.66);
+    
+}
+
+#sub_visual .prod-thumb .swiper-slide img {
+    display: block;
+    width: 408px;
+    height: 544px;
+    object-fit: cover;
+    border: 3px solid #fff;box-sizing: border-box;
+}
+
+#sub_visual .prod-thumb .swiper-scrollbar {width: 200px; left: 50%; transform: translateX(-50%); bottom: 5%;}
+.swiper-scrollbar-drag {background: #50554f !important;}
+.swiper-scrollbar {background: #fff !important;}
+
+
+#sub_visual .centerbox1314 .infoSection {border: 1px solid #50554f; padding: 36px 34px; box-sizing:border-box; width: 532px; /* height: 730px; */ border-radius: 10px; background: #ececec; margin-top: 100px;}
+
+#sub_visual .centerbox1314 .infoSection .eng {text-transform: uppercase; font-size: 14px; font-weight: 300; color: #707070; margin-bottom: 10px;}
+#sub_visual .centerbox1314 .infoSection .name {font-size: 27px; font-weight: 300; color: #333; margin-bottom: 10px;word-break: keep-all;}
+
+#sub_visual .centerbox1314 .infoSection .reviewBox {display: flex;align-items: center; margin-bottom: 5px;}
+#sub_visual .centerbox1314 .infoSection .reviewBox .stars {margin-right: 10px;margin-top: 9px;}
+#sub_visual .centerbox1314 .infoSection .reviewBox .rating {margin-right: 14px; font-size: 14px; color: #333; font-weight: 300;}
+#sub_visual .centerbox1314 .infoSection .reviewBox .reviews {font-size: 13px; border-bottom: 1px solid #000; color: #707070;}
+
+#sub_visual .centerbox1314 .infoSection .priceBox {display: flex; align-items: end; margin-bottom: 15px;}
+#sub_visual .centerbox1314 .infoSection .priceBox .sale {color: #234815; font-size: 21px; font-weight: 400; margin-right: 12px;}
+#sub_visual .centerbox1314 .infoSection .priceBox .price {color: #333; font-size: 31px; font-weight: 500; margin-right: 10px;}
+#sub_visual .centerbox1314 .infoSection .priceBox .ogPrice {color: #707070; font-size: 16px; font-weight: 300;  text-decoration: line-through;}
+
+#sub_visual .centerbox1314 .infoSection p.selectTit {font-size: 14px; color: #234815; font-weight: 400;}
+#sub_visual .centerbox1314 .infoSection select {background: transparent; font-size: 14px; font-weight: 300; color: #707070; width: 100%; height: 34px; border: 0; border-bottom: 1px solid #b9b9b9; margin-bottom: 28px;}
+
+#sub_visual .centerbox1314 .infoSection .cartCount {display: flex;font-size: 14px; color: #234815; font-weight: 500; display: none;}
+#sub_visual .centerbox1314 .infoSection .cartCount .trash_icon {cursor: pointer;}
+#sub_visual .centerbox1314 .infoSection .cartCount .trash_icon img {width: 20px;}
+#sub_visual .centerbox1314 .infoSection .cartCount .prdName {}
+#sub_visual .centerbox1314 .infoSection .cartCount .counter {float: right;}
+#sub_visual .centerbox1314 .infoSection .cartCount .counter .decrease {}
+#sub_visual .centerbox1314 .infoSection .cartCount .counter img {width: 18px;}
+#sub_visual .centerbox1314 .infoSection .prod_box { padding: 5px 0;}
+
+#sub_visual .centerbox1314 .infoSection .totalPriceBox {display: flex;justify-content: space-between; margin-bottom: 15px; margin-top: 28px;}
+#sub_visual .centerbox1314 .infoSection .totalPriceBox .tit {font-size: 14px; font-weight: 300; color: #333;}
+#sub_visual .centerbox1314 .infoSection .totalPriceBox .totalPrice {font-size: 26px; font-weight: 500; color: #234815;}
+
+#sub_visual .centerbox1314 .infoSection .btnBox {text-align: center; display: flex; flex-wrap: wrap;gap: 6px; align-items: center; justify-content: center; margin-bottom: 20px;}
+#sub_visual .centerbox1314 .infoSection .btnBox button {width: 100%; height: 100%;}
+
+#sub_visual .centerbox1314 .infoSection .btnBox .cartBtn {width: 48%; border: 1px solid #707070; background: #fff; height: 40px; line-height: 40px; box-sizing: border-box; flex-grow: 1;}
+#sub_visual .centerbox1314 .infoSection .btnBox .cartBtn button.cart {font-size: 16px; font-weight: 500; color: #333; }
+
+#sub_visual .centerbox1314 .infoSection .btnBox .buyBtn {width: 48%;background: #707070; height: 40px; line-height: 40px; flex-grow: 1;}
+#sub_visual .centerbox1314 .infoSection .btnBox .buyBtn button.buy {font-size: 16px; font-weight: 500; color: #fff;}
+
+#sub_visual .centerbox1314 .infoSection .btnBox .payBtn {width: 100%; background: #234815; height: 40px; }
+#sub_visual .centerbox1314 .infoSection .btnBox .payBtn button.pay {}
+#sub_visual .centerbox1314 .infoSection .btnBox .payBtn button.Npay img {line-height: 40px;}
+
+
+#sub_visual .centerbox1314 .infoSection .keywordBox {display: flex; border-bottom: 1px solid #707070; height: 35px;}
+#sub_visual .centerbox1314 .infoSection .keywordBox p {font-size: 14px; color: #707070;}
+
+#sub_visual .centerbox1314 .infoSection .aboutProduct {}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .titleBox {display: flex;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .titleBox h2 {position: relative; padding: 0 10px;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .titleBox h2:first-child {padding-left: 0;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .titleBox h2::after {content: ''; width: 1px; height: 15px; background: #707070; position: absolute; right: 0; top: 45%;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .titleBox h2:last-child::after {display: none;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .titleBox h2 a {font-size: 14px; font-weight: 300; color: #707070;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .titleBox h2.on a {font-size: 14px; font-weight: 800; color: #234815;}
+
+#sub_visual .centerbox1314 .infoSection .aboutProduct .contentBox {margin-top: 20px;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .contentBox p {font-size: 13px; color: #707070;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .contentBox .compo {display: none;}
+#sub_visual .centerbox1314 .infoSection .aboutProduct .contentBox .howtouse {display: none;}
+
+
+
+
+/* sub_section */
+/* 상품정보 */
+
+#sub_section {margin: 141px 0;border-top: 1px solid #707070;}
+#sub_section .titleBox {}
+#sub_section .titleBox .centerbox1314 {}
+#sub_section .titleBox .centerbox1314 .h2Title {display: flex;}
+#sub_section .titleBox .centerbox1314 h2 {width: 396px; height: 70px; text-align: center; line-height: 70px;}
+#sub_section .titleBox .centerbox1314 h2 a {font-size: 16px; color: #707070; font-weight: 300;}
+#sub_section .titleBox .centerbox1314 h2.on {/* border-bottom: 2px solid #234815; box-sizing: border-box; z-index: 3; */}
+#sub_section .titleBox .centerbox1314 h2.on a {color: #234815; font-weight: 800;}
+#sub_section .titleBox .centerbox1314 h2:hover a {color: #234815; font-weight: 800;}
+#sub_section .titleBox .titleBorder {border-top: 1px solid #b9b9b9; display: block;}
+
+#sub_section .titleBox .centerbox1314 .titLine {position: absolute;  height: 2px; background: #234815; transition: 0.3s; left: 0; }
+
+#sub_section .contentBox {padding: 109px 0 0 0;}
+#sub_section .contentBox .centerbox1314 {}
+
+#sub_section .contentBox .centerbox1314 .productInfo {}
+#sub_section .contentBox .centerbox1314 .productInfo #detail {text-align: center; position: relative;}
+#sub_section .contentBox .centerbox1314 .productInfo #detail.hidden::before {content: ""; position: absolute; width: 100%; height: 100px; background: #000; bottom: 0; left: 0; background: linear-gradient(180deg, transparent, #ECECEA);}
+#sub_section .contentBox .centerbox1314 .productInfo #detail.hidden {height: 1300px; overflow: hidden; text-align: center;}
+#sub_section .contentBox .centerbox1314 .productInfo #detail.hidden img {}
+
+#sub_section .contentBox .centerbox1314 .detailMore {text-align: center; width: 384px; height: 56px; background: #fff; border: 1px solid #707070; line-height: 56px; margin: 70px auto 0;}
+#sub_section .contentBox .centerbox1314 .detailMore a#btnMore {width: 100%; height: 100%; display: block; font-size: 24px; font-weight: 300; color: #333;}
+#sub_section .contentBox .centerbox1314 .detailMore a#btnMore img {margin: 25px 0 0 10px;}
+
+/* 상품리뷰 */
+
+#sub_section .contentBox .centerbox1314 .review {padding-top: 177px;}
+#sub_section .contentBox .centerbox1314 .review .firstrow {display: flex; justify-content: space-between; border-bottom: 1px solid #000; height: 75px; align-items: center;}
+#sub_section .contentBox .centerbox1314 .review .firstrow h3 {font-size: 24px; font-weight: 400; color: #222;}
+#sub_section .contentBox .centerbox1314 .review .firstrow .write {width: 220px; height: 40px; border-radius: 10px; background: #234815; text-align: center; line-height: 40px;}
+#sub_section .contentBox .centerbox1314 .review .firstrow .write a {color: #fff; font-size: 18px; font-weight: 300; display: block;}
+
+#sub_section .contentBox .centerbox1314 .review .summary {display: flex;padding: 58px 0;}
+#sub_section .contentBox .centerbox1314 .review .summary .left {width: 40%;}
+#sub_section .contentBox .centerbox1314 .review .summary .left p:first-child {font-size: 18px; color: #222; font-weight: 400;}
+#sub_section .contentBox .centerbox1314 .review .summary .left h3 {font-weight: 600; color: #234815; font-size: 70px; margin-bottom: 20px;}
+#sub_section .contentBox .centerbox1314 .review .summary .left .stars {font-size: 30px; font-weight: 400; color: #222; line-height: 20px;}
+#sub_section .contentBox .centerbox1314 .review .summary .left .stars img {}
+#sub_section .contentBox .centerbox1314 .review .summary .left .stars img:last-child {margin-right: 5px;}
+#sub_section .contentBox .centerbox1314 .review .summary .left p:last-child {font-size: 18px; font-weight: 300; color: #222; margin-top: 25px;}
+
+#sub_section .contentBox .centerbox1314 .review .summary .right {width: 60%;}
+#sub_section .contentBox .centerbox1314 .review .summary .right div {display: flex; height: 55px; align-items: center; }
+#sub_section .contentBox .centerbox1314 .review .summary .right div p {font-size: 18px; font-weight: 400; color: #222; width: 100px; margin-right: 50px;}
+#sub_section .contentBox .centerbox1314 .review .summary .right div .bar {width: 486px; height: 11px; background: #b9b9b9; display: block; border-radius: 10px; margin-right: 30px; position: relative;}
+#sub_section .contentBox .centerbox1314 .review .summary .right div .num {}
+
+#sub_section .contentBox .centerbox1314 .review .summary .right .great .bar::after {content: ''; position: absolute; width: 459px; height: 11px; background: #234815; border-radius: 10px;}
+#sub_section .contentBox .centerbox1314 .review .summary .right .like .bar::after {content: ''; position: absolute; width: 31px; height: 11px; background: #234815; border-radius: 10px;}
+#sub_section .contentBox .centerbox1314 .review .summary .right .good .bar::after {content: ''; position: absolute; width: 16px; height: 11px; background: #234815; border-radius: 10px;}
+#sub_section .contentBox .centerbox1314 .review .summary .right .soso .bar::after {}
+#sub_section .contentBox .centerbox1314 .review .summary .right .bad .bar::after {}
+
+
+/* 포토&영상 */
+#sub_section .contentBox .centerbox1314 .review .photoReview {margin-bottom: 85px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .top {display: flex; justify-content: space-between; margin-bottom: 49px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .top p {font-size: 18px; color: #222; font-weight: 300;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .top a {font-size: 18px; color: #222; font-weight: 300;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .top a img {margin-top: 7px;margin-left: 30px;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview ul {display: flex; justify-content: space-between;}
+#sub_section .contentBox .centerbox1314 .review .photoReview ul li {}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox {padding: 80px 0;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category {display: flex; justify-content: space-between; margin-bottom: 44px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .left-category {display: flex;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .left-category h2 {position: relative;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .left-category h2::after {content: ''; position: absolute; width: 1px; height: 12px; background: #222; top: 50%; }
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .left-category h2:last-child::after {display: none;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .left-category h2 a {font-size: 18px; color: #707070; font-weight: 300; padding: 0 27px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .left-category h2:first-child a {padding-left: 0;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .left-category h2.on a {color: #234815; font-weight: 600;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .right-photo {}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .right-photo a {font-size: 20px; color: #222; font-weight: 400;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .category .right-photo a img {}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .selectBox {margin-bottom: 10px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox .selectBox select {width: 115px; height: 38px; color: #707070; border-color: #b9b9b9; margin-right: 5px;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list { display: flex; flex-direction: column; height: auto;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li {display: flex; padding: 50px 0 0 0; box-sizing: border-box; position: relative; text-align: start;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li:after {content: '';width: 1314px; height: 1px; background: #b9b9b9; position: absolute; bottom: 0;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox #detail2.hidden {height: 800px; overflow: hidden;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content { width: 900px; align-items: center;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .star_rate {margin-bottom: 15px; font-weight: 600;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .star_rate img {width: 20px;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content p {margin-bottom: 30px; color: #333;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content span.more a {color: #707070;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content span.more a img {width: 10px; margin-top: 10px; margin-left: 24px;margin-bottom: 25px;}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating {display: flex; margin-bottom: 50px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating .helped {margin-right: 24px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating a {width: 40px; height: 18px; background: #fff; border-radius: 7px; border: 1px solid #707070; line-height: 18px; padding: 1px 2px;text-align: center;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating a img {width: 12px; margin-top: 5px; margin-right: 5px; }
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating div {color: #707070;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating .helped a {color: #707070;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating .helped a img {}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating .not_helped {}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating .not_helped a {color: #707070;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .rating .not_helped a img {}
+
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info { display: flex; align-items: start; margin-left: 30px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .date {margin-right: 100px; color: #707070; }
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .cont {color: #707070;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .cont p {display: flex;justify-content: space-between;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .cont p:first-child {margin-bottom: 20px;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .cont p.age {font-weight: 600;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .cont p.skin {font-weight: 600;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .cont p.hair {font-weight: 600;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .writer_info .cont p span {align-items: start;  width: 80px; font-weight: 300;}
+
+
+#sub_section .contentBox .centerbox1314 .detailMore2 {text-align: center; width: 384px; height: 56px; background: #fff; border: 1px solid #707070; line-height: 56px; margin: 70px auto 0;}
+#sub_section .contentBox .centerbox1314 .detailMore2 a#btnMore2 {width: 100%; height: 100%; display: block; font-size: 24px; font-weight: 300; color: #333;}
+#sub_section .contentBox .centerbox1314 .detailMore2 a#btnMore2 img {margin: 25px 0 0 10px;}
+
+#sub_section .contentBox .centerbox1314 .reviewBox #detail.hidden {height: 790px; overflow: hidden; text-align: center;}
+
+
+#sub_section .detail_info {}
+#sub_section .detail_info .centerbox1314 {}
+#sub_section .detail_info .centerbox1314 h2 {font-size: 24px; color: #222; font-weight: 400; margin-bottom: 48px;}
+#sub_section .detail_info .centerbox1314 ul {}
+#sub_section .detail_info .centerbox1314 ul li {display: flex; justify-content: space-between;border-bottom: 1px solid #b9b9b9;padding: 10px 0;align-items: center;}
+#sub_section .detail_info .centerbox1314 ul li:first-child {border-top: 1px solid #b9b9b9;}
+#sub_section .detail_info .centerbox1314 ul li span {color: #333; font-weight: 400; width: 400px;}
+#sub_section .detail_info .centerbox1314 ul li p {color: #707070; font-weight: 300; width: 800px;}
