@@ -5,7 +5,7 @@
 @import url(common.css);
 @import url(sub.css);
 
-body {font-family: 'Pretendard-Regular'; background: #ececea;}
+body {font-family: 'Pretendard-Regular'; background: #ececea; overflow-x: hidden;}
 .centerbox1314 {max-width: 1314px; margin: 0 auto;}
 
 
@@ -219,7 +219,7 @@ body {font-family: 'Pretendard-Regular'; background: #ececea;}
 } */
 
 #section04 .bgText {position: relative;}
-#section04 .bgText h3 {-webkit-text-stroke: 2px #888; font-size: 240px; font-weight: 600; color: transparent;position: absolute;z-index: -1; white-space: nowrap; top: 300px; animation: marquee 60s linear infinite; }
+#section04 .bgText h3 {-webkit-text-stroke: 2px #888; font-size: 240px; font-weight: 600; color: transparent;position: absolute;z-index: -1; white-space: nowrap; top: 300px; animation: marquee 60s linear infinite; font-family: 'Pretendard-Black'}
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }

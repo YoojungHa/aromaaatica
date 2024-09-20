@@ -29,6 +29,7 @@ header .centerbox1314 nav .gnb li .lnb li a {font-family: 'Pretendard Variable';
 header .centerbox1314 nav .lnbBg1 {width: 100%; height: 220px; background: #fff; position: absolute; top: 92px; left: 0; z-index: -1; display: none;}
 header .centerbox1314 nav .lnbBg2 {width: 100%; height: 370px; background: #fff; position: absolute; top: 92px; left: 0; z-index: -1; display: none;}
 header .centerbox1314 nav .lnbBg3 {width: 100%; height: 270px; background: #fff; position: absolute; top: 92px; left: 0; z-index: -1; display: none;}
+header .centerbox1314 nav .lnbBg4 {width: 100%; height: 220px; background: #fff; position: absolute; top: 92px; left: 0; z-index: -1; display: none;}
 
 /* hover */
 header .centerbox1314 nav .gnb li .lnb li:hover a {color: #50554f; font-weight: 600;}

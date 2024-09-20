@@ -191,7 +191,7 @@
 #sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li {display: flex; padding: 50px 0 0 0; box-sizing: border-box; position: relative; text-align: start;}
 #sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li:after {content: '';width: 1314px; height: 1px; background: #b9b9b9; position: absolute; bottom: 0;}
 
-#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox #detail2.hidden {height: 800px; overflow: hidden;}
+#sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox #detail2.hidden {height: 700px; overflow: hidden;}
 
 #sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content { width: 900px; align-items: center;}
 #sub_section .contentBox .centerbox1314 .review .photoReview .reviewBox ul.list li .content .star_rate {margin-bottom: 15px; font-weight: 600;}
@@ -230,7 +230,7 @@
 #sub_section .contentBox .centerbox1314 .detailMore2 a#btnMore2 {width: 100%; height: 100%; display: block; font-size: 24px; font-weight: 300; color: #333;}
 #sub_section .contentBox .centerbox1314 .detailMore2 a#btnMore2 img {margin: 25px 0 0 10px;}
 
-#sub_section .contentBox .centerbox1314 .reviewBox #detail.hidden {height: 790px; overflow: hidden; text-align: center;}
+#sub_section .contentBox .centerbox1314 .reviewBox #detail.hidden {height: 750px; overflow: hidden; text-align: center;}
 
 
 #sub_section .detail_info {}

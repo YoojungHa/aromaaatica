@@ -2,40 +2,95 @@
 
 $(document).ready(function() {
     $('header').load('include/header.html', function(){
-            var $headerBg = $('.headerBg');
-            var headerHeight = $('header').outerHeight();
-            var scrT = $(window).scrollTop();
-            var mainPage = $('body.main').length;
+        var $headerBg = $('.headerBg');
+        var headerHeight = $('header').outerHeight();
+        var mainPage = $('body.main').length;
 
+// 서브 페이지에서 무조건 headerBg 보이도록 설정
+function mainMenu() {
+    var scrT = $(window).scrollTop();
+    if (mainPage < 1) {
+        $headerBg.show(); // 서브 페이지에서는 항상 보여줌
+    } else if (scrT <= 50) {
+        $headerBg.stop().fadeOut();
+    } else {
+        $headerBg.show();
+    }
+}
 
-            if(mainPage > 0){
-                $(window).on('scroll', function() {
-                    if ($(window).scrollTop() > headerHeight) {
-                        $headerBg.stop().slideDown();
-                    } else {
-                        $headerBg.stop().slideUp();
-                    }
-                });
+headerMenu();
+function headerMenu() {
+    if (mainPage > 0) {
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > headerHeight) {
+                $headerBg.stop().slideDown();
             } else {
-                $headerBg.stop().show();
+                $headerBg.stop().slideUp();
             }
+        });
+    } else {
+        $headerBg.stop().show();
+    }
+}
 
+// gnb에서 마우스가 이동할 때 headerBg가 사라지지 않도록 처리
+$('.gnb').on('mouseenter', 'li', function () {
+    var $lnb = $(this).find('.lnb'); // 현재 li 안에 있는 lnb
+    var lnbHeight = $lnb.outerHeight(true); // lnb의 높이 계산 (패딩 포함)
+
+    if ($lnb.length > 0) { // lnb가 있는 경우에만 실행
+        var lnbBgClass = $(this).find('.lnb').attr('class').split(' ')[1].replace('lnb', 'lnbBg');
+        $('.' + lnbBgClass).stop().slideDown().css('height', lnbHeight); // lnb에 맞게 lnbBg 높이 조정
+        $lnb.stop().slideDown();
+        if ($(window).scrollTop() <= 50) {
+            $headerBg.stop().show(); // 맨 위에 있을 때만 보여줌
+        }
+    }
+});
+
+$('.gnb').on('mouseleave', 'li', function () {
+    var $lnb = $(this).find('.lnb');
+    if ($lnb.length > 0) {
+        var lnbBgClass = $(this).find('.lnb').attr('class').split(' ')[1].replace('lnb', 'lnbBg');
+        $lnb.stop().slideUp();
+        $('.' + lnbBgClass).stop().slideUp();
+    }
+});
+
+// gnb 전체에서 마우스가 벗어났을 때만 headerBg 숨기기
+$('.gnb').mouseleave(function () {
+    if ($(window).scrollTop() <= 50) {
+        $headerBg.stop().fadeOut(); // gnb 전체에서 벗어났을 때만 숨김
+    }
+});
+
+$('.lnbBg').mouseleave(function () {
+    var lnbBgClass = $(this).attr('class').split(' ')[1];
+    $('.' + lnbBgClass.replace('Bg', '')).stop().slideUp();
+    $(this).stop().slideUp();
+    mainMenu();
+});
+
+        
         // lnb1
-        $('.gnb > li').eq(0).mouseover(function(){
+        /* $('.gnb > li').eq(0).mouseover(function(){
             $('.gnb > li').eq(0).find('.lnb1').stop().slideDown();
             $('.lnbBg1').stop().slideDown();
             $('.headerBg').show();
         })
 
-        $('.gnb > li').eq(0).mouseout(function(){
+        $('.gnb > li').eq(0).mouseleave(function(){
             $('.gnb > li').eq(0).find('.lnb1').stop().slideUp();
             $('.lnbBg1').stop().slideUp();
+            headerMenu()
+            mainMenu()
         })
 
-        $('.lnbBg1').mouseout(function(){
+        $('.lnbBg1').mouseleave(function(){
             $('.gnb > li').eq(0).find('.lnb1').stop().slideUp();
             $('.lnbBg1').stop().slideUp();
-            $('.headerBg').hide();
+            headerMenu()
+            mainMenu()
         })
 
         // lnb2
@@ -45,18 +100,20 @@ $(document).ready(function() {
             $('.headerBg').show();
         })
 
-        $('.gnb > li').eq(1).mouseout(function(){
+        $('.gnb > li').eq(1).mouseleave(function(){
             $('.gnb > li').eq(1).find('.lnb2-2').hide();
             $('.gnb > li').eq(1).find('.lnb2, .lnb2-2').stop().slideUp();
             $('.lnbBg2').stop().slideUp();
-            $('.headerBg').hide();
+            headerMenu()
+            mainMenu()
         })
 
-        $('.lnbBg2').mouseout(function(){
+        $('.lnbBg2').mouseleave(function(){
             $('.gnb > li').eq(1).find('.lnb2-2').hide();
             $('.gnb > li').eq(1).find('.lnb2, .lnb2-2').stop().slideUp();
             $('.lnbBg2').stop().slideUp();
-            $('.headerBg').hide();
+            headerMenu()
+            mainMenu()
         })
 
         // lnb3
@@ -66,16 +123,18 @@ $(document).ready(function() {
             $('.headerBg').show();
         })
 
-        $('.gnb > li').eq(2).mouseout(function(){
+        $('.gnb > li').eq(2).mouseleave(function(){
             $('.gnb > li').eq(2).find('.lnb3').stop().slideUp();
             $('.lnbBg3').stop().slideUp();
-            $('.headerBg').hide();
+            headerMenu()
+            mainMenu()
         })
 
-        $('.lnbBg3').mouseout(function(){
+        $('.lnbBg3').mouseleave(function(){
             $('.gnb > li').eq(2).find('.lnb3').stop().slideUp();
             $('.lnbBg3').stop().slideUp();
-            $('.headerBg').hide();
+            headerMenu()
+            mainMenu()
         })
 
         // lnb4
@@ -85,18 +144,21 @@ $(document).ready(function() {
             $('.headerBg').show();
         })
 
-        $('.gnb > li').eq(4).mouseout(function(){
+        $('.gnb > li').eq(4).mouseleave(function(){
             $('.gnb > li').eq(4).find('.lnb4').stop().slideUp();
             $('.lnbBg1').stop().slideUp();
-            $('.headerBg').hide();
+            headerMenu()
+            mainMenu()
         })
 
-        $('.lnbBg1').mouseout(function(){
+        $('.lnbBg1').mouseleave(function(){
             $('.gnb > li').eq(4).find('.lnb4').stop().slideUp();
             $('.lnbBg1').stop().slideUp();
-            $('.headerBg').hide();
-        })
+            headerMenu()
+            mainMenu()
+        }) */
     })
+
 
     $('footer').load('include/footer.html')
 
